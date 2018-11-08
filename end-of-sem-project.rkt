@@ -191,7 +191,7 @@
   (send twitter-oauth get-request
         "https://api.twitter.com/1.1/search/tweets.json"
         (list (cons 'q "")
-              (cons 'count "800")
+              (cons 'count "1500")
               (cons 'geocode "1.3707295,32.3032414,200km") ;;; coordinates for uganda 
               (cons 'since "2018-01-01")
               (cons 'until "2018-12-31")))))
