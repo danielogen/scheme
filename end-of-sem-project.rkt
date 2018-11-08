@@ -274,7 +274,7 @@
 (define sentiment (list->sentiment words #:lexicon 'nrc))
 
 ;;; We can take a sneak peak at the data...
-(take sentiment 3)
+(take sentiment 8)
 ;;; --> '(("word" "sentiment" "freq")
 ;;;       ("ship" "anticipation" 367)
 ;;;       ("sea" "positive" 364)
