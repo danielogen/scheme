@@ -226,14 +226,7 @@
 ;;; using "with-input-from-bytes" procedure 
 (define tweets (string->jsexpr
                 (with-input-from-bytes raw_tweets (λ () (json-lines->json-array)))))
-
-(define t (car (car
-                  (let ([tmp (map (λ (x) (list (hash-ref x 'statuses))) tweets)])
-                    tmp))))
-(define tweet-text
-    (let ([tmp (map (λ (x) (list (hash-ref x 'text))) t)])
-      (filter (λ (x) (not (string-prefix? (first x) "RT"))) tmp)))
-
+		
 ;;; 3.
 ;;; I design the text-only abstraction to easily get lists of tweet text only
 ;;; for bunch of tweet meta-data returned by the query
