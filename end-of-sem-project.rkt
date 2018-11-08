@@ -191,10 +191,10 @@
   (send twitter-oauth get-request
         "https://api.twitter.com/1.1/search/tweets.json"
         (list (cons 'q "")
-              (cons 'count "5")
+              (cons 'count "800")
               (cons 'geocode "1.3707295,32.3032414,200km") ;;; coordinates for uganda 
-              (cons 'since "2018-11-06")
-              (cons 'until "2018-11-07")))))
+              (cons 'since "2018-01-01")
+              (cons 'until "2018-12-31")))))
 
 ;;; This function reads line-oriented JSON,
 ;;; and packages it into an array. For very large data sets, loading
