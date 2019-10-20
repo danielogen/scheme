@@ -174,10 +174,10 @@
 ;;; we now use the above package and pass the required arguments
 ;;; for building the oauth_signature and authentication to twitter 
 (define twitter-oauth (new oauth-single-user%  
-     [consumer-key "IeuGaViCctVJ6rIKxbYfSiXzm"]
-     [consumer-secret "7pIbwODvhQ58YYycHvUEi6MfNNMffju3mQHRDjGqFR6yrrvc2g"]
-     [access-token "1977499933-cu6wXh7X48AV7rRrF4LhlruI3El9p4nQUSZbKLv"]
-     [access-token-secret "VkhC0axbwEInxSbesq0qduj1oS9ZAO4tzuLqZohmn7SiL"]))
+     [consumer-key "xxxxxxx"]
+     [consumer-secret "xxxxxx"]
+     [access-token "xxxxxxx"]
+     [access-token-secret "xxxxxxxx"]))
 
 ;;; -------------------------------------------------------------------------
 ;;; No. 1, 2, 3, 4 - denotes the new abstraction i developed or extended 
